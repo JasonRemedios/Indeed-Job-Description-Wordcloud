@@ -18,11 +18,9 @@ def extract(i, index):
     newSoup = bs4.BeautifulSoup(newRes.text, features='lxml')
     newElems = newSoup.select('div[id="jobDescriptionText"]')
     print(counter)
-    try:
+    if len(newElems) > 0:
         result = regex.sub(' ', str(newElems[0]))
         descList.append(result)
-    except:
-        return
     
 
 
