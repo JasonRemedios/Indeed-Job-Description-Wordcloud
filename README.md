@@ -1,2 +1,4 @@
 # Indeed-Job-Description-Wordcloud
-Scrapes job descriptions from Indeed from user-inputted search terms and compiles a word cloud from them.
+Enter job search terms and number pages. Script will:
+  1. Scrape job descriptions from that many pages
+  2. display a wordcloud of the descriptions and print a DataFrame of the most common words.
